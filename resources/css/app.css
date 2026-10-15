@@ -1,0 +1,1028 @@
+
+/* =========================
+   GENERAL
+========================= */
+
+body {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.874), rgba(0, 0, 0, 0.885)),
+        url("../images/opoae.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #800020 !important;
+}
+
+.title {
+    color: #800020 !important;
+}
+
+p,
+small,
+label,
+span {
+    color: #d6d6d6;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-gold {
+    background: linear-gradient(135deg, #3A000D, #800020, #B22222, #3A000D);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation: shimmerGold 4s ease-in-out infinite;
+    filter: drop-shadow(0 2px 8px rgba(128, 0, 32, 0.5));
+    font-size: 1.5rem;
+}
+
+@keyframes shimmerGold {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.logo-gold:hover {
+    color: #800020 !important;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    display: block !important;
+}
+
+.navbar .navbar-brand {
+    color: #800020 !important;
+}
+
+.navbar .nav-link {
+    color: #f5f5f5 !important;
+    transition: .25s;
+}
+
+.navbar .nav-link:hover {
+    color: #800020 !important;
+}
+
+.navbar .nav-link.active {
+    color: #800020 !important;
+    border-bottom: 2px solid #800020;
+}
+/* =========================
+   USER BADGE
+========================= */
+
+.user-badge {
+    background: #495057;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+
+.hero-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    margin-top: 0;
+    padding: 90px 30px;
+    background: #181818;
+    border: 1px solid #2b2b2b;
+    border-radius: 18px;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/but.jpg") center 30% / cover no-repeat;
+    filter: brightness(.3);
+    transform: scale(1.08);
+    z-index: -2;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, .7);
+}
+
+.hero-section h1 {
+    letter-spacing: 3px;
+}
+
+.hero-content h4,
+.hero-content p {
+    text-shadow: 0 2px 8px rgba(67, 11, 11, 0.8);
+}
+
+/*hero-logo*/
+.hero-logo {
+    background: linear-gradient(135deg, #3A000D, #800020, #B22222, #B22222, #800020, #3A000D);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation: shimmerGold 9s ease-in-out infinite;
+    filter: drop-shadow(0 2px 8px rgba(128, 0, 32, 0.5));
+}
+
+@keyframes shimmerGold {
+    0% {background-position: 0% 50%;}
+
+    50% {background-position: 100% 50%;}
+
+    100% {background-position: 0% 50%;}
+}
+
+.hero-logo:hover {
+    color: #800020 !important;
+}
+
+.hero-section .btn {
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-section h1,
+.hero-section h4{
+    color: #800020 !important;
+}
+
+.hero-section p {
+    color: #e5e5e5 !important;
+}
+
+.hero-section .btn-dark {
+    background-color: #800020 !important;
+    border-color: #800020 !important;
+    color: #111 !important;
+}
+
+.hero-section .btn-dark:hover {
+    background-color: #800020 !important;
+    border-color: #800020 !important;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h7 {
+    margin-bottom: 5px;
+    color: #800020;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.stat small {
+    color: #cfcfcf;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    overflow: hidden;
+    background: #1d1d1d;
+    color: white;
+    border: 1px solid #2b2b2b;
+}
+
+/* =========================
+   ARCHIVE CARD
+========================= */
+
+.archive-card {
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+}
+
+.archive-card h5 {
+    color: #800020 !important;
+}
+
+.archive-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, .18) !important;
+}
+
+.archive-card img {
+    transition: .35s;
+}
+
+.archive-card:hover img {
+    transform: scale(1.08);
+}
+
+/* ======================
+   Detail Archive Image
+====================== */
+
+.archive-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 550px;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: zoom-in;
+    transition: .3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+.archive-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+}
+
+/* ======================
+   LIGHTBOX
+====================== */
+
+#lightbox{
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,.92);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+#lightbox img{
+    max-width: 92%;
+    max-height: 92%;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.7);
+}
+
+#closeLightbox{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+
+    color: white;
+    font-size: 42px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* =========================
+   DASHBOARD CARD
+========================= */
+
+.dashboard-card {
+    display: block;
+    min-height: 150px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .18) !important;
+}
+
+.dashboard-card h1 {
+    font-size: 55px;
+}
+
+.dashboard-card h2 {
+    font-size: 3rem;
+}
+
+.dashboard-card h3 {
+    font-weight: 700;
+}
+
+.dashboard-icon {
+    font-size: 45px;
+    opacity: .35;
+}
+
+/* =========================
+   ARCHIVE DETAIL
+========================= */
+
+.archive-detail-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.archive-content {
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.archive-card {
+    height: 100%;
+}
+
+.archive-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.archive-card p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    min-height: 45px;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+    background: #800020 !important;
+    color: #111;
+    border-radius: 30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-outline-dark {
+    color: #800020 !important;
+    border-color: #800020 !important;
+}
+ 
+.btn-outline-dark:hover {
+    background: #800020 !important;
+    color: #fff !important;
+}
+
+.btn-success {
+    background: #800020 !important;
+    border-color: #800020 !important;
+    color: #111;
+}
+
+.btn-success:hover {
+    background: #800020 !important;
+    border-color: #800020 !important;
+    color: #fff !important;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-control {
+    background: #1d1d1d;
+    color: white;
+    border: 1px solid #444;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.form-control:focus {
+    background: #1d1d1d;
+    color: white;
+    border-color: #800020;
+    box-shadow: 0 0 0 .2rem rgba(128, 0, 32, .25);
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table {
+    color: white;
+}
+
+.table-dark {
+    --bs-table-bg: #1a1a1a;
+}
+
+.table thead {
+    background: #222;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+    border-color: #333;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #0f0f0f;
+    border-top: 1px solid #2b2b2b;
+    padding: 60px 0 40px;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #8b1028;
+}
+
+.footer h3 {
+    color: white;
+    letter-spacing: 3px;
+}
+
+.footer p {
+    font-size: .95rem;
+    color: #bdbdbd;
+    line-height: 1.8;
+}
+
+.footer p,
+.footer small {
+    color: #adb5bd !important;
+}
+
+.footer hr {
+    border-color: #495057;
+    width: 120px;
+    margin: auto;
+}
+
+/* =========================
+   SEARCH HIGHLIGHT
+========================= */
+
+mark {
+    background: #800020;
+    color: #111;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.navbar,
+.navbar * {
+    color: white !important;
+}
+
+.navbar .navbar-brand {
+    color: #800020 !important;
+}
+
+/* Mobile Navbar */
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .user-badge {
+        width: fit-content;
+    }
+
+    .navbar .btn {
+        width: fit-content;
+    }
+
+}
+
+.navbar {
+    display: block !important;
+}
+
+/* =========================
+  TAMPILAN LOGIN
+========================= */
+.card form .form-control {
+    background: #2a2a2a !important;
+    color: #960404 !important;
+    border: 1px solid #444;
+    padding: 12px 16px !important;
+    border-radius: 8px;
+    width: 100% !important;
+}
+
+.card form .form-control:focus {
+    border-color: #800020;
+    box-shadow: 0 0 0 0.2rem rgba(128, 0, 32, 0.25);
+}
+
+.card form .form-control::placeholder {
+    color: #888;
+}
+
+.card form label {
+    color: #ddd;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.card form input[type="email"],
+.card form input[type="password"],
+.card form input[type="text"] {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+/* Tombol Login */
+/* Tombol Breeze (Login, Register, dll.) */
+
+.card {
+    backdrop-filter: blur(8px);
+}
+
+.card form .btn-success {
+    background-color: #800020 !important;
+    border: 1px solid #800020 !important;
+    color: #fff !important;
+
+    font-weight: 600;
+    padding: 12px !important;
+    border-radius: 50px;
+
+    width: 50%;
+    transition: all .3s ease;
+}
+
+.register-text a {
+    color: #800020 !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-text a:hover {
+    color: #aaa !important;
+}
+
+.card form .btn-success:hover {
+    background-color: #9b0f2c !important;
+    border-color: #9b0f2c !important;
+    color: #fff !important;
+
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(128, 0, 32, .35);
+}
+
+.card form .form-control {
+    transition: .25s;
+}
+
+.card form .form-control:focus {
+    transform: translateY(-2px);
+}
+
+.login-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-actions a {
+    flex: 1;
+    color: #bdbdbd;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.login-actions a:hover {
+    color: #800020;
+}
+
+.login-actions .btn-success {
+    min-width: 150px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* password*/
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper .form-control {
+    padding-right: 50px !important;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 38%;
+    transform: translateY(-25%);
+    size: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    background: transparent;
+    border: none;
+
+    color: #777;
+    cursor: pointer;
+
+    transition: color .25s ease;
+}
+
+.password-toggle:hover {
+    color: #800020;
+}
+
+.eye-icon {
+    width: 30px;
+    height: 30px;
+
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    transition: .25s ease;
+}
+
+.password-toggle.active {
+    color: #800020;
+}
+
+/* media query hp tablet*/
+@media (max-width: 480px) {
+
+    .login-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .login-actions a {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .login-actions .btn-success {
+        width: 100%;
+    }
+
+}
+
+/* Checkbox */
+.card form .form-check-input {
+    background-color: #2a2a2a;
+    border-color: #555;
+}
+
+.card form .form-check-input:checked {
+    background-color: #800020;
+    border-color: #800020;
+}
+
+.card form .form-check-label {
+    color: #ccc !important;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-check-input {
+    width: 18px !important;
+    height: 18px !important;
+    margin: 0 !important;
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.form-check-label {
+    margin-bottom: 0 !important;
+    color: #ddd !important;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Link lupa password */
+.card form a {
+    color: #aaa !important;
+    text-decoration: none;
+}
+
+.card form a:hover {
+    color: #800020 !important;
+}
+
+.card p.text-secondary {
+    color: #b5b5b5 !important;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* Error message */
+.card form .invalid-feedback {
+    color: #ff6b6b;
+    font-size: 0.85rem;
+}
+
+/*======================
+      pagination
+  ====================== */
+/* Pagination info */
+.small.text-muted {
+    color: #aeaeae !important;
+}
+
+.page-link {
+    background: #222;
+    color: #ddd;
+    border: 1px solid #444;
+}
+
+.page-link:hover {
+    background: #333;
+    color: #fff;
+    border-color: #666;
+}
+
+.page-item.active .page-link {
+    background: #800020;
+    border-color: #800020;
+    color: #fff;
+}
+
+.page-item.disabled .page-link {
+    background: #1b1b1b;
+    color: #666;
+    border-color: #333;
+}
+
+.page-link:focus {
+    color: #fff !important;
+    background: #8b0000 !important;
+    border-color: #1b1b1b !important;
+    box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, .25) !important;
+}
+
+/* =========================
+   TOMBOL EDIT & DELETE
+========================= */
+
+/* Tombol EDIT */
+.btn-edit {
+    background-color: #2b2b2b !important;
+    border-color: #444 !important;
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 6px 18px;
+    transition: 0.3s;
+}
+
+.btn-edit:hover {
+    background-color: #000 !important;
+    border-color: #2c2c2c !important;
+    color: #fff !important;
+}
+
+/* Tombol DELETE - warna maroon gelap */
+.btn-danger {
+    background-color: #800020 !important;
+    border-color: #800020 !important;
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 6px 18px;
+    transition: 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #3A000D !important;
+    border-color: #3A000D !important;
+    color: #fff !important;
+}
+
+.action-buttons .btn {
+    min-width: 80px;
+}
+
+/* =========================
+   TOMBOL CANCEL N SAVE 
+========================= */
+
+.btn-secondary,
+.btn-dark,
+.modal .btn-secondary {
+    background: #2b2b2b !important;
+    border: 1px solid #444 !important;
+    color: #ddd !important;
+    
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 8px 18px;
+    
+    transition: .25s;
+}
+
+.btn-secondary:hover,
+.btn-dark:hover,
+.modal .btn-secondary:hover {
+    background: #000 !important;
+    border-color: #2c2c2c !important;
+    color: #fff !important;
+}
+
+/* sace n update*/
+.btn-primary {
+    background: transparent;
+    border: 1px solid #800020;
+    color: #800020;
+}
+
+.btn-primary:hover {
+    background: #800020;
+    color: #fff;
+}
+
+/* =========================
+   TABEL GELAP (ARTICLES & CATEGORIES)
+========================= */
+
+/* Semua tabel di halaman admin */
+.table {
+    background-color: #1a1a1a !important;
+    color: #e5e5e5 !important;
+    border-color: #333 !important;
+}
+
+/* Header tabel */
+.table thead {
+    background-color: #222 !important;
+    color: #fff !important;
+    border-bottom: 2px transparent #000000 !important;
+}
+
+.table thead th {
+    color: #fff !important;
+    font-weight: 600;
+    padding: 12px 8px;
+    border-color: #333 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+/* Sel tabel */
+.table td,
+.table th {
+    border-color: #141313 !important;
+    padding: 12px 8px;
+    vertical-align: middle;
+    background-color: transparent !important;
+}
+
+/* Baris genap (striped) - opsional, biar lebih jelas */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+/* Hover baris */
+.table-hover > tbody > tr:hover > * {
+    background-color: rgba(229, 174, 187, 0.15) !important;
+}
+
+/* =========================
+   TABEL GELAP - SEMUA TEKS PUTIH
+========================= */
+
+/* Semua elemen di dalam tabel */
+.table,
+.table * {
+    color: #ffffff !important;
+}
+
+/* Header tabel */
+.table thead th {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+
+/* Teks kecil (badge, label, dll.) di dalam tabel */
+.table small,
+.table span,
+.table .text-muted {
+    color: #cccccc !important;
+}
+
+/* Jika ada teks dengan class .text-secondary atau sejenisnya */
+.table .text-secondary,
+.table .text-muted {
+    color: #cccccc !important;
+}
+
+/* ==================
+      Modal VEIL 
+   ==================*/
+.modal-content {
+    background: linear-gradient(180deg,
+            #181818 0%,
+            #121212 100%);
+
+    border: 1px solid rgba(93, 1, 24, 0.55);
+    border-radius: 16px;
+
+    box-shadow:
+        0 0 0 1px rgba(128, 0, 32, .12),
+        0 20px 50px rgba(0, 0, 0, .7),
+        0 0 25px rgba(128, 0, 32, .08);
+}
+
+.modal-header,
+.modal-footer {
+    border-color: rgba(255, 255, 255, .08);
+}
+
+.modal-title {
+    color: #fff !important;
+}
+
+.modal-body {
+    color: #ccc !important;
+}
+
+.modal-body strong {
+    color: #800020 !important;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.modal-backdrop.show {
+    background: #000;
+    opacity: .85;
+}
